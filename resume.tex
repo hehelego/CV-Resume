@@ -1,0 +1,123 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+\usepackage{graphicx}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{progressbar}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Cheng Peng}
+
+\basicInfo{
+	\email{pengcheng2@shanghaitech.edu.cn} \textperiodcentered\
+	\phone{(+86) 151-0154-2294} \textperiodcentered\
+	\github[hehelego]{https://github.com/hehelego}}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{ShanghaiTech University}, Shanghai, China}{2020 -- Present}
+\textit{Bachelor of Engineering} in Computer Science. Expected graduation date: June 2024\par
+\begin{itemize}
+	\item Overall GPA 3.89/4, ranked 2/176
+	\item Major GPA 4/4.
+	\item CS major courses taken:
+	      \begin{description}
+		      \item[CS100] Introduction to computer programming, A+
+		      \item[CS101] Data Structure and Algorithm, A+
+		      \item[CS110] Computer Architecture, A+
+		      \item[CS120] Computer Network, A+
+		      \item[CS121] Parallel Computing, A
+		      \item[CS130] Operating System, A+
+		      \item[CS240] Algorithm Design and Analysis, A+
+		      \item[CS244] Theory of Computation, A
+	      \end{description}
+\end{itemize}
+
+\section{\faChalkboardTeacher\ TA Experiences}
+
+\datedsubsection{\textbf{CS101 Data Structure and Algorithm} at ShanghaiTech SIST, Shanghai, China}{Sep. 2022 -- Jan. 2023}
+\role{Teaching Assistant}{Leader of the programming assignments group.}
+\begin{itemize}
+	\item In charge of setting four programming assignments.
+	\item Maintain online judge system for the programming tasks.
+	\item Carry out weekly recitation.
+	\item Problem setter of homework covering asymptotic analysis, disjoint set union and NP-completeness.
+\end{itemize}
+
+\datedsubsection{\textbf{CS110 Computer Architecture} at ShanghaiTech SIST, Shanghai, China}{Feb. 2023 -- June. 2023}
+\role{Teaching Assistant}{of the computer architecture course in the semester of Spring 2023}
+\begin{itemize}
+	\item Task setter of two programming homework.
+	\item Design a project on performance optimization (discover bottleneck with profiler, improving cache hit rate, leveraging OpenMP thread parallelism and utilizing SIMD vectorization).
+	\item Hold lab session weekly.
+\end{itemize}
+
+\section{\faNetworkWired\ Projects}
+
+\datedsubsection{\textbf{Parallel K-means in C++}}{Apr. 2021 -- Jun. 2021}
+\role{Programmer}{Individual course project of CS100 Introduction to Programming.}
+\begin{itemize}
+	\item Data parallel with C++ \texttt{std::thread}.
+	\item Manually vectorization with Intel AVX2 SIMD instructions.
+	\item Improve cache hit rate by transposing the access pattern.
+\end{itemize}
+
+\datedsubsection{\textbf{PintOS}}{Sep. 2022 -- Jan. 2023}
+\role{Programmer}{Course project of CS130 Operating System. Collaborated with Huizhe Su, my fiancee.}
+\begin{itemize}
+	\item Implementing Thread scheduling and synchronization primitives.
+	\item Implementing User program loading and argument passing.
+	\item Implementing various system call handlers.
+	\item Implementing page table management and swapping.
+	\item Implementing basic file system with ext2 alike structure.
+	\item Pass all the test case.
+	\item Write clear and concise design document.
+\end{itemize}
+
+\datedsubsection{\textbf{Athernet}}{Sep. 2022 -- Jan. 2023}
+\role{Architect and Programmer}{Course project of CS120 Computer Network. In collaboration with beloved Huizhe Su.}
+\begin{itemize}
+	\item Well-organized with \texttt{cargo-workspace}. Written in pure rust.
+	\item Physics layer that send/receive chunk of data over acoustic channel either wireless or cabal-connected.
+	\item MAC sublayer with CSMA/CD enabling bidirectional point-to-point reliable data transmission.
+	\item IP protocol for network layer. A gateway with NAT. ICMP ping request and response.
+	\item Basic TCP and UDP protocol support. Providing socket API that resembles rust \texttt{std::net::TcpStream}.
+	\item FTP client with limited functionalities on Athernet.
+	\item SOCKS5 proxy server for tunneling normal network traffic through Athernet.
+\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+	\item English Proficiency:
+	      \begin{itemize}
+		      \item \textbf{TOEFL 103} (R 29, L 29, S 23, W 22).
+		      \item Most of the course I've taken are taught in English.
+		      \item English working environment in my previous TA experiences.
+	      \end{itemize}
+	\item Programming Skills:
+	      \begin{itemize}
+			  \item Express thoughts fluently with \textbf{Rust} and \textbf{Python}.
+			  \item Proficient in \textbf{C++} and \textbf{C}.
+			  \item Basic knowledge in \textbf{Haskell} as well as \textbf{Scala}.
+	      \end{itemize}
+	\item Developing Environment:
+	      \begin{itemize}
+		      \item Using \textbf{Arch Linux} on a daily basis for more than 2 years.
+		      \item Working with \textbf{i3wm}, \textbf{fish shell}, \textbf{neovim} and \textbf{tmux} efficiently at ease.
+		      \item Good command of \textbf{git} version control system and \textbf{lazygit} TUI git client.
+	      \end{itemize}
+\end{itemize}
+
+\section{\faHeart[regular]\ Honors and Awards}
+Not interested in glorify myself, I never apply for a scholarship or award.
+
+\section{\faInfo\ Miscellaneous}
+\begin{itemize}[parsep=0.5ex]
+	\item Github: \url{https://github.com/hehelego}
+	\item Dotfiles: \url{https://github.com/hehelego/dotfiles}
+	\item Personal notebook: \url{https://github.com/hehelego/WhyNotMarkdown}
+\end{itemize}
+
+\end{document}
